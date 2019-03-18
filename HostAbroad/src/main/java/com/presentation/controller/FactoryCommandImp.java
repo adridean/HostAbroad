@@ -18,17 +18,17 @@ public class FactoryCommandImp extends FactoryCommand {
 
 	@Override
 	public Command parseCommand(Commands command) {
-		Command com = null;
+		Command loadedCommand = null;
 		try {
-			  Class c = Class.forName("com.presentation.commands." + command);  // Dynamically load every command
-			  Object o = c.newInstance(); // Dynamically instantiate it
-			  com = (Command)o;
+			  Class loadedClass = Class.forName("com.presentation.commands." + command);  // Dynamically load every command
+			  Object loadedObject = loadedClass.newInstance(); // Dynamically instantiate it
+			  loadedCommand = (Command)loadedObject;
 			} catch (Exception e) {
 				e.printStackTrace();
 				System.out.println("Exeption in FactoryCommandImp parseCommand().");
 			}
 		
-		return com;
+		return loadedCommand;
 	}
 
 }
