@@ -13,7 +13,7 @@ public class Test extends UI {
     @Override
     protected void init(VaadinRequest request) {
     	//addWindow(/*Window*/);
-        //hola RObertitio2
+        //hola RObertitio2 prueba
     	addWindow(new Window(Cards));
     }
 }
