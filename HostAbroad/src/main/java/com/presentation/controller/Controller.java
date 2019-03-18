@@ -1,7 +1,7 @@
 package com.presentation.controller;
 
-/*This class should be additionally tested. Reason: during the implementation class Pair
- * and Command were not included in SearchHost*/
+import com.presentation.commands.CommandEnum.Commands;
+import com.presentation.commands.Pair;
 
 public abstract class Controller {
 	private static Controller instance;
