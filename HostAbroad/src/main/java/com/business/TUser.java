@@ -25,7 +25,7 @@ public class TUser {
 		this.nickname = nickname;
 	}
 	
-	public String getNickName() {
+	public String getNickname() {
 		return this.nickname;
 	}
 	

@@ -9,9 +9,9 @@
       <param-value>com.presentation.Test</param-value>
     </init-param>
   </servlet>
+  
   <servlet-mapping>
     <servlet-name>HostAbroad</servlet-name>
     <url-pattern>/*</url-pattern>
   </servlet-mapping>
-  
 </web-app>
