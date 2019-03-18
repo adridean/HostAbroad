@@ -14,6 +14,6 @@ public class Test extends UI {
     protected void init(VaadinRequest request) {
     	//addWindow(/*Window*/);
         //hola RObertitio2
-    	addWindow(new Window("hi"));
+    	addWindow(new Window(Cards));
     }
 }
